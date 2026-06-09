@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Sri Lakshmi K | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <nav class="navbar">
+           <div class="nav-links">
+    <a href="#home" class="active">Home</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#hackathon">Hackathon</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+
+  </div>            
+        </nav>
+        <div class="logo">Sri Lakshmi K</div>
+        <section id="home" class="hero">
+             <!-- Left Side -->
+        <div class="profile-box">
+            <img class="profile-img" src="image/profile.png" alt="Profile Photo">
+
+        </div>
+        <!-- Right Side -->
+        <div class="hero-content">
+            <h3>Hi, I'm</h3>
+            <h1>Aspiring Backend Developer</h1>
+            <p>Passionate about Java, Spring Boot, and backend system design.
+Learning microservices and building projects to gain real-world development experience.</p>
+<div class="right--btn">
+<a href="#projects" class="explore-btn">
+    Explore 
+</a>
+
+    <a href="SRI LAKSHMI K_RESUME .pdf"
+       download
+       class="resume-btn">
+         Resume
+    </a>
+    </div>
+
+</div>
+            <!-- <div class="github-container">
+        <div class="stats-card">
+            <img
+                    src="https://streak-stats.demolab.com?user=SriLakshmiK1810"
+                    alt="GitHub Streak">
+                <img
+                    src="https://leetcard.jacoblin.cool/Sri_Lakshmi_K"
+                    alt="LeetCode Stats">
+          <!-- Include your existing GitHub stats grid components here -->
+          <!-- <img src="your-github-stats-image-or-iframe.png" alt="Stats">
+        </div>
+      </div> --> 
+    </div>
+        </section>
+
+        <section id="projects" class="projects">
+    <h2 class="section-title">Projects</h2>
+
+    <div class="project-grid">
+
+        <div class="flip-card">
+
+        <!-- Front -->
+        <div class="flip-card-front">
+            <h3>Debugging Contest Event</h3>
+
+            <span>Java - SpringBoot</span>
+
+            <div class="project-buttons">
+
+    <a href="https://github.com/SriLakshmiK1810/Debugging-Contest-Event"
+       target="_blank"
+       class="view-code-btn">
+       View Code
+    </a>
+    <a href="https://debugging-contest-event-za9p.vercel.app/"
+       target="_blank"
+       class="project-btn">
+       Live Demo
+    </a>
+    <button class="know-more-btn"
+        onclick="openModal('debugModal')">
+    Know More ...
+</button>
+
+</div>
+</div>
+    
+</div>
+
+        <div class="flip-card">
+    <div class="flip-card-front">
+
+        <h3>AI Water Quality Monitoring</h3>
+
+        <span>Python • Machine Learning</span>
+
+        <div class="project-buttons">
+
+            <a href="https://github.com/SriLakshmiK1810/AI-Based-Water-Quality-Fish-Health-Monitoring-System"
+               target="_blank"
+               class="view-code-btn">
+               View Code
+            </a>
+            <a href="https://ai-based-water-quality-fish-health-monitoring-system-rayrhosgp.streamlit.app/" target="_blank" class="project-btn">Live Demo</a>
+
+        </div>
+
+        <button class="know-more-btn"
+                onclick="openModal('waterModal')">
+            Know More ...
+        </button>
+
+    </div>
+</div>
+
+        <div class="flip-card">
+    <div class="flip-card-front">
+
+        <h3>Aqua Tracker</h3>
+        <span>HTML • CSS • JavaScript • MySQL</span>
+
+        <div class="project-buttons">
+
+            <a href="https://github.com/SriLakshmiK1810/AQUA_TRACKER"
+               target="_blank"
+               class="view-code-btn">
+               View Code
+            </a>
+
+            <a href="https://srilakshmik1810.github.io/AQUA_TRACKER/"
+               class="project-btn">
+               Live Demo
+            </a>
+
+        </div>
+
+        <button class="know-more-btn"
+                onclick="openModal('aquaModal')">
+            Know More ...
+        </button>
+
+    </div>
+</div>
+
+    </div>
+</section>
+<div id="debugModal" class="modal">
+
+    <div class="modal-content">
+
+        <span class="close"
+              onclick="closeModal('debugModal')">
+            &times;
+        </span>
+
+        <h2>Debugging Contest Event</h2>
+
+        <p>
+            Developed a Java-based platform for conducting debugging
+            competitions and evaluating coding skills.
+        </p>
+
+        <h3>Tech Stack</h3>
+        <p>Java, Spring Boot, MySQL</p>
+
+        <a href="https://github.com/SriLakshmiK1810/Debugging-Contest-Event"
+           target="_blank"
+           class="view-code-btn">
+            View Code
+        </a>
+
+        <a href="https://debugging-contest-event-za9p-kv4v304pj.vercel.app/"
+           target="_blank"
+           class="project-btn">
+            Live Demo
+        </a>
+
+    </div>
+
+</div>
+<div id="waterModal" class="modal">
+
+    <div class="modal-content">
+
+        <span class="close"
+              onclick="closeModal('waterModal')">
+            &times;
+        </span>
+
+        <h2>AI Water Quality Monitoring</h2>
+
+        <p>
+            Machine learning system developed to predict water quality and
+            monitor fish health using environmental and chemical parameters.
+        </p>
+
+        <h3>Key Features</h3>
+
+        <ul>
+            <li>Water quality prediction</li>
+            <li>Fish health monitoring</li>
+            <li>Data analytics dashboard</li>
+            <li>ML model with high accuracy</li>
+        </ul>
+
+        <h3>Tech Stack</h3>
+
+        <p>Python, Pandas, NumPy, Scikit-learn, Matplotlib</p>
+
+        <a href="https://github.com/SriLakshmiK1810/AI-Based-Water-Quality-Fish-Health-Monitoring-System"
+           target="_blank"
+           class="view-code-btn">
+            View Code
+        </a>
+
+    </div>
+
+</div>
+<div id="aquaModal" class="modal">
+
+    <div class="modal-content">
+
+        <span class="close"
+              onclick="closeModal('aquaModal')">
+            &times;
+        </span>
+
+        <h2>Aqua Tracker</h2>
+
+        <p>
+            Aqua Tracker is a smart water management system that helps users
+            monitor water consumption, analyze usage trends, and improve
+            conservation through real-time tracking.
+        </p>
+
+        <h3>Key Features</h3>
+
+        <ul>
+            <li>Water usage monitoring</li>
+            <li>Consumption analytics</li>
+            <li>Trend visualization</li>
+            <li>Conservation insights</li>
+        </ul>
+
+        <h3>Tech Stack</h3>
+
+        <p>HTML, CSS, JavaScript, MySQL</p>
+
+        <a href="https://github.com/SriLakshmiK1810/AQUA_TRACKER"
+           target="_blank"
+           class="view-code-btn">
+            View Code
+        </a>
+
+    </div>
+
+</div>
+<!---------------skill-------------->
+<section id="skills" class="skills">
+
+    <h2 class="section-title">Tech Stack</h2>
+
+    <div class="skills-container">
+
+        <!-- Backend -->
+        <div class="skill-category">
+            <h3>Backend</h3>
+
+            <div class="skill-items">
+
+                <div class="skill">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg">
+                    <span>Java</span>
+                </div>
+
+                <div class="skill">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg">
+                    <span>Spring Boot</span>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Frontend -->
+        <div class="skill-category">
+            <h3>Frontend</h3>
+
+            <div class="skill-items">
+
+                <div class="skill">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg">
+                    <span>HTML</span>
+                </div>
+
+                <div class="skill">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg">
+                    <span>CSS</span>
+                </div>
+
+                <div class="skill">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg">
+                    <span>JavaScript</span>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Tools -->
+        <div class="skill-category">
+            <h3>Tools</h3>
+
+            <div class="skill-items">
+
+                <div class="skill">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg">
+                    <span>Git</span>
+                </div>
+
+                <div class="skill">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                    class="github-icon">
+                    <span>GitHub</span>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Design -->
+        <div class="skill-category">
+            <h3>Design</h3>
+
+            <div class="skill-items">
+
+                <div class="skill">
+                    <img src="https://cdn.simpleicons.org/figma/F24E1E">
+                    <span>Figma</span>
+                </div>
+
+                <div class="skill">
+                    <img src="https://cdn.simpleicons.org/canva/00C4CC">
+                    <span>Canva</span>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</section>
+<!---------------------------------connect-------------------------------->
+<section id="contact" class="contact">
+
+    <h2 class="section-title">Let's Connect</h2>
+
+    <p class="contact-subtitle">
+         I'm actively seeking opportunities to grow as a Backend Developer.
+
+    Whether it's a project, internship, hackathon, or collaboration,
+
+    I'd be happy to connect and discuss ideas.
+    </p>
+
+    <form class="contact-form">
+
+        <input
+            type="text"
+            placeholder="Your Name"
+            required
+        >
+
+        <input
+            type="email"
+            placeholder="Your Email"
+            required
+        >
+
+        <input
+            type="text"
+            placeholder="Contact Number"
+        >
+
+        <textarea
+            rows="6"
+            placeholder="Tell me why you'd like to connect..."
+            required
+        ></textarea>
+
+        <button type="submit" class="send-btn">
+            Send Message
+        </button>
+
+    </form>
+
+    <div class="availability">
+
+        <p>Available on</p>
+
+        <div class="social-links">
+
+            <a href="mailto:srilakshmik1810@gmail.com">
+                <img src="https://cdn.simpleicons.org/gmail/EA4335" alt="Email">
+            </a>
+
+            <a href="https://www.linkedin.com/in/srilakshmik18105/" target="_blank">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
+     alt="LinkedIn">
+            </a>
+
+            <a href="https://github.com/SriLakshmiK1810" target="_blank">
+                <img src="https://cdn.simpleicons.org/github/ffffff" alt="GitHub">
+            </a>
+
+            <a href="https://instagram.com/renuga_18105" target="_blank">
+                <img src="https://cdn.simpleicons.org/instagram/E4405F" alt="Instagram">
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+<footer class="footer">
+    <p>Designed & Developed by Sri Lakshmi K</p>
+</footer>
+<script src="script.js"></script>
+    </body>
+
+</html>
