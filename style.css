@@ -136,6 +136,21 @@ section{
     font-size:clamp(0.9rem,1.5vw,1.1rem);
     line-height: 2;
 }
+.leetcode-card{
+    margin-top:10px;
+}
+
+.leetcode-card img{
+    width:100%;
+    max-width:300px;
+    border-radius:12px;
+
+    transition:0.3s ease;
+}
+
+.leetcode-card img:hover{
+    transform:translateY(-5px);
+}
 .explore-btn{
     display: inline-block;
     margin-top: 35px;
