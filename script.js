@@ -18,6 +18,27 @@ function closeModal(modalId) {
     }, 300);
 }
 
+function toggleMenu(){
+    document.getElementById("nav-links").classList.toggle("active");
+}
+// const links = document.querySelectorAll("#nav-links a");
+
+// links.forEach(link => {
+//     link.addEventListener("click", () => {
+//         document.getElementById("nav-links")
+//                 .classList.remove("active");
+//     });
+// });
+document.addEventListener("DOMContentLoaded", () => {
+    const links = document.querySelectorAll("#nav-links a");
+
+    links.forEach(link => {
+        link.addEventListener("click", () => {
+            document.getElementById("nav-links")
+                    .classList.remove("active");
+        });
+    });
+});
 window.onclick = function(event) {
     const modals = document.querySelectorAll(".modal");
 

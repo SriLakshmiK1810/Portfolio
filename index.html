@@ -11,8 +11,9 @@
     </head>
     <body>
         <nav class="navbar">
-           <div class="nav-links">
-    <a href="#home" class="active">Home</a>
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
+           <div class="nav-links" id="nav-links">
+    <a href="#" class="active">Home</a>
     <a href="#projects">Projects</a>
     <a href="#skills">Skills</a>
     <a href="#hackathon">Hackathon</a>
@@ -34,12 +35,8 @@
             <h1>Aspiring Backend Developer</h1>
             <p>Passionate about Java, Spring Boot, and backend system design.
 Learning microservices and building projects to gain real-world development experience.</p>
-<div class="leetcode-card">
-    <img
-        src="https://leetcard.jacoblin.cool/Sri_Lakshmi_K?theme=dark&font=Montserrat&ext=contest"
-        alt="LeetCode Stats">
-</div>
-<div class="right--btn">
+
+<div class="right-btn">
 <a href="#projects" class="explore-btn">
     Explore 
 </a>
@@ -292,6 +289,10 @@ Learning microservices and building projects to gain real-world development expe
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg">
                     <span>Spring Boot</span>
                 </div>
+                <div class="skill">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
+    <span>MySQL</span>
+</div>
 
             </div>
         </div>
@@ -352,7 +353,7 @@ Learning microservices and building projects to gain real-world development expe
                 </div>
 
                 <div class="skill">
-                    <img src="https://cdn.simpleicons.org/canva/00C4CC">
+                    <img src="https://img.icons8.com/color/96/canva.png" alt="Canva">
                     <span>Canva</span>
                 </div>
 
@@ -375,30 +376,23 @@ Learning microservices and building projects to gain real-world development expe
     I'd be happy to connect and discuss ideas.
     </p>
 
-    <form class="contact-form">
+    <form
+  class="contact-form"
+  action="https://formspree.io/f/mwvjqdbn"
+  method="POST"
+>
 
-        <input
-            type="text"
-            placeholder="Your Name"
-            required
-        >
+        <input type="text" name="name" placeholder="Your Name" required>
 
-        <input
-            type="email"
-            placeholder="Your Email"
-            required
-        >
+<input type="email" name="email" placeholder="Your Email" required>
 
-        <input
-            type="text"
-            placeholder="Contact Number"
-        >
+<input type="text" name="phone" placeholder="Contact Number">
 
-        <textarea
-            rows="6"
-            placeholder="Tell me why you'd like to connect..."
-            required
-        ></textarea>
+<textarea
+    name="message"
+    placeholder="Tell me why you'd like to connect..."
+    required>
+</textarea>
 
         <button type="submit" class="send-btn">
             Send Message
@@ -408,7 +402,7 @@ Learning microservices and building projects to gain real-world development expe
 
     <div class="availability">
 
-        <p>Available on</p>
+        <p>Get In Touch</p>
 
         <div class="social-links">
 
