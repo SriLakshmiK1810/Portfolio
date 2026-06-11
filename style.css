@@ -927,12 +927,13 @@ footer{
 
 .timeline-dot{
     position: absolute;
-    left: 10px;
-    width: 22px;
+    left: 0px;
+    width: 3px;
     height: 22px;
     background: #00abda;
     border-radius: 50%;
     border: 4px solid #0a192f;
+    
 }
 
 .timeline-content{
@@ -951,3 +952,58 @@ footer{
     color: #ccd6f6;
     font-size: 14px;
 }
+
+.timeline-point {
+    width: 18px;
+    height: 18px;
+    background: #00abda;
+    border-radius: 50%;
+    position: relative;
+}
+
+/* Current Education */
+.timeline-point.current {
+    width: 22px;
+    height: 22px;
+    background: #00abda;
+    border: 3px solid #fff;
+    box-shadow: 0 0 15px #00abda;
+    animation: pulse 1.5s infinite;
+}
+
+.timeline-point.current::before {
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    width: 32px;
+    height: 32px;
+    border: 2px solid #00abda;
+    border-radius: 50%;
+}
+
+
+.timeline-dot.current::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 36px;
+    height: 36px;
+    border: 2px solid #00abda;
+    border-radius: 50%;
+
+    transform: translate(-50%, -50%);
+}
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 5px #00abda;
+    }
+    50% {
+        box-shadow: 0 0 25px #00abda;
+    }
+    100% {
+        box-shadow: 0 0 5px #00abda;
+    }
+}
+
